@@ -15,11 +15,7 @@ while i < len(word):
         j = j + 1
     i = i + 1
 
-if duplicate == True:
+if duplicate is True:
     print("Found duplicate: True")
 else:
     print("Found duplicate: False")
-
-### VS Code is telling me there's a bug at ###
-### line 18, but it still works just fine ###
-### so I'm leaving it alone ###
