@@ -1,5 +1,6 @@
 """Choose Your Own Adventure - "Cooking for College Students"."""
 
+__author__ = "730383357"
 
 points: int = 0
 player: str = ""
