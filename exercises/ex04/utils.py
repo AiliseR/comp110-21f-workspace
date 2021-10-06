@@ -30,13 +30,15 @@ def is_equal(a: list[int], b: list[int]) -> bool:
 
 
 def max(large: list[int]) -> int:
-    i: int = 0
+    """Assess each item in the list, return the largest value."""
     if len(large) == 0:
         raise ValueError("max() arg is an empty List")
     else:
-        value: int = large[0]
+        i: int = 0
+        most: int = large[i]
+        i += 1
         while i < len(large):
-            if value < large[i + 1]:
-                value: int = large[i + 1]
+            if large[i] > most:
+                most = large[i]
             i += 1
-        return value
+        return most
